@@ -1,5 +1,7 @@
 import Link from "next/link";
-export default function Home() {
+import Image from "next/image";
+
+const HomePage = () => {
   return (
     <body>
       {/* // Nav */}
@@ -9,12 +11,12 @@ export default function Home() {
           <div className="wraper">
             <Link href="menu">
               <a>
-                <img style={{ width: "24px" }} src="/plus.png" alt="plus" />{" "}
+                <Image width="24px" height="24px" src="/plus.png" alt="plus" />{" "}
               </a>
             </Link>
-            <div className="description-nav">Gianyar</div>
+            <div className="description-nav">Kabupaten Gianyar</div>
             <div>
-              <img style={{ width: "24px" }} src="/menu.png" alt="plus" />
+              <Image width="24px" height="24px" src="/menu.png" alt="plus" />
             </div>
           </div>
         </div>
@@ -62,17 +64,25 @@ export default function Home() {
 
       <div>
         <div className="flex-footer">
-          <div>Rincian Lainnya</div>
+          <div style={{ marginRight: "6px" }}>Rincian Lainnya</div>
           <div>
-            <img className="icon-footer" src="/right-chevron.png" alt="right" />
+            <Image
+              width="10px"
+              height="10px"
+              className="icon-footer"
+              src="/right-chevron.png"
+              alt="right"
+            />
           </div>
         </div>
       </div>
 
       <div className="wrapper-flex">
         <div className="items-footer">
-          <img
-            style={{ width: "38px", marginRight: "10px" }}
+          <Image
+            width="38px"
+            height="0px"
+            marginRight="10px"
             src="/sun-white.png"
             alt="sun"
           />
@@ -87,8 +97,10 @@ export default function Home() {
 
       <div className="wrapper-flex">
         <div className="items-footer">
-          <img
-            style={{ width: "38px", marginRight: "10px" }}
+          <Image
+            width="38px"
+            height="0px"
+            marginRight="10px"
             src="/cloudy-day.png"
             alt="sun"
           />
@@ -103,8 +115,10 @@ export default function Home() {
 
       <div className="wrapper-flex">
         <div className="items-footer">
-          <img
-            style={{ width: "38px", marginRight: "10px" }}
+          <Image
+            width="38px"
+            height="0px"
+            marginRight="10px"
             src="/sun-white.png"
             alt="sun"
           />
@@ -119,8 +133,10 @@ export default function Home() {
 
       <div className="wrapper-flex">
         <div className="items-footer">
-          <img
-            style={{ width: "38px", marginRight: "10px" }}
+          <Image
+            width="38px"
+            height="0px"
+            marginRight="10px"
             src="/cloudy-day.png"
             alt="sun"
           />
@@ -142,18 +158,21 @@ export default function Home() {
       {/* End Footer */}
 
       {/* Articel */}
-      <div>
-        <div>
-          <img className="img-center" src="/info.jpg" />
-        </div>
+      <div style={{ padding: "0px 24px" }}>
+        <Image
+          layout="responsive"
+          width={700}
+          height={393}
+          src="/info.jpg"
+          alt="info"
+        />
       </div>
 
-      <div style={{ overflow: "auto", whiteSpace: "nowrap" }}>
+      <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
         <div
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
@@ -161,11 +180,12 @@ export default function Home() {
             <div className="articel">
               <div className="items">Now</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                26<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
+                <Image
+                  width="34px"
+                  height="34px"
                   src="/sun-white.png"
                   alt="cuaca"
                 />
@@ -179,19 +199,149 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">08:00</div>
               <div className="wrapper-articel">
                 28<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/sun-white.png"
+                  alt="cuaca"
+                />
+              </div>
+              <div className="items">14.2km/j</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            width: "100px",
+            marginRight: 10,
+          }}
+        >
+          <div className="articel-display">
+            <div className="articel">
+              <div className="items">09:00</div>
+              <div className="wrapper-articel">
+                30<sup className="derajat">o</sup>
+              </div>
+              <div>
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/cloud.png"
+                  alt="cuaca"
+                />
+              </div>
+              <div className="items">17.1km/j</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            width: "100px",
+            marginRight: 10,
+          }}
+        >
+          <div className="articel-display">
+            <div className="articel">
+              <div className="items">10:00</div>
+              <div className="wrapper-articel">
+                28<sup className="derajat">o</sup>
+              </div>
+              <div>
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/sun-white.png"
+                  alt="cuaca"
+                />
+              </div>
+              <div className="items">21.0km/j</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            width: "100px",
+            marginRight: 10,
+          }}
+        >
+          <div className="articel-display">
+            <div className="articel">
+              <div className="items">11:00</div>
+              <div className="wrapper-articel">
+                18<sup className="derajat">o</sup>
+              </div>
+              <div>
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/rainy-sky.png"
+                  alt="cuaca"
+                />
+              </div>
+              <div className="items">21.6km/j</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            width: "100px",
+            marginRight: 10,
+          }}
+        >
+          <div className="articel-display">
+            <div className="articel">
+              <div className="items">12:00</div>
+              <div className="wrapper-articel">
+                32<sup className="derajat">o</sup>
+              </div>
+              <div>
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/cloudy-day.png"
+                  alt="cuaca"
+                />
+              </div>
+              <div className="items">37.2km/j</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            width: "100px",
+            marginRight: 10,
+          }}
+        >
+          <div className="articel-display">
+            <div className="articel">
+              <div className="items">01:00</div>
+              <div className="wrapper-articel">
+                22<sup className="derajat">o</sup>
+              </div>
+              <div>
+                <Image
+                  width="34px"
+                  height="34px"
                   src="/sun-white.png"
                   alt="cuaca"
                 />
@@ -205,24 +355,24 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">02:00</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                20<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/cloudy-day.png"
                   alt="cuaca"
                 />
               </div>
-              <div className="items">13.0km/j</div>
+              <div className="items">28.5km/j</div>
             </div>
           </div>
         </div>
@@ -231,24 +381,24 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">03:00</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                16<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/rainy-sky.png"
                   alt="cuaca"
                 />
               </div>
-              <div className="items">13.0km/j</div>
+              <div className="items">32.9km/j</div>
             </div>
           </div>
         </div>
@@ -257,24 +407,24 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">04:00</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                18<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/cloud.png"
                   alt="cuaca"
                 />
               </div>
-              <div className="items">13.0km/j</div>
+              <div className="items">23.0km/j</div>
             </div>
           </div>
         </div>
@@ -283,24 +433,24 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">05:00</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                16<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/rainy-sky.png"
                   alt="cuaca"
                 />
               </div>
-              <div className="items">13.0km/j</div>
+              <div className="items">26.0km/j</div>
             </div>
           </div>
         </div>
@@ -309,50 +459,24 @@ export default function Home() {
           style={{
             display: "inline-block",
             width: "100px",
-            height: 100,
             marginRight: 10,
           }}
         >
           <div className="articel-display">
             <div className="articel">
-              <div className="items">Now</div>
+              <div className="items">06:00</div>
               <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
+                20<sup className="derajat">o</sup>
               </div>
               <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
+                <Image
+                  width="34px"
+                  height="34px"
+                  src="/cloudy-day.png"
                   alt="cuaca"
                 />
               </div>
-              <div className="items">13.0km/j</div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: "inline-block",
-            width: "100px",
-            height: 100,
-            marginRight: 10,
-          }}
-        >
-          <div className="articel-display">
-            <div className="articel">
-              <div className="items">Now</div>
-              <div className="wrapper-articel">
-                28<sup className="derajat">o</sup>
-              </div>
-              <div>
-                <img
-                  style={{ width: "34px" }}
-                  src="/sun-white.png"
-                  alt="cuaca"
-                />
-              </div>
-              <div className="items">13.0km/j</div>
+              <div className="items">26.7km/j</div>
             </div>
           </div>
         </div>
@@ -365,7 +489,7 @@ export default function Home() {
             28<sup className="derajat">o</sup>
           </div>
           <div>
-            <img style={{ width: "34px" }} src="/sun-white.png" alt="cuaca" />
+             width="34px" height="0px" src="/sun-white.png" alt="cuaca" />
           </div>
           <div className="items">13.0km/j</div>
         </div>
@@ -376,7 +500,7 @@ export default function Home() {
             27<sup className="derajat">o</sup>
           </div>
           <div>
-            <img style={{ width: "34px" }} src="/cloudy-day.png" alt="cuaca" />
+             width="34px" height="0px" src="/cloudy-day.png" alt="cuaca" />
           </div>
           <div className="items">11.1km/j</div>
         </div>
@@ -386,7 +510,7 @@ export default function Home() {
             27<sup className="derajat">o</sup>
           </div>
           <div>
-            <img style={{ width: "34px" }} src="/sun-white.png" alt="cuaca" />
+             width="34px" height="0px" src="/sun-white.png" alt="cuaca" />
           </div>
           <div className="items">11.0km/j</div>
         </div>
@@ -396,7 +520,7 @@ export default function Home() {
             28<sup className="derajat">o</sup>
           </div>
           <div>
-            <img style={{ width: "34px" }} src="/cloud.png" alt="cuaca" />
+             width="34px" height="0px" src="/cloud.png" alt="cuaca" />
           </div>
           <div className="items">11.6km/j</div>
         </div>
@@ -444,4 +568,6 @@ export default function Home() {
       {/* End Articel */}
     </body>
   );
-}
+};
+
+export default HomePage;

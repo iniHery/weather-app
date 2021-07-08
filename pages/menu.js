@@ -1,11 +1,18 @@
 import Link from "next/link";
-export default () => {
+import Image from "next/image";
+
+const MenuPage = () => {
   return (
     <>
       <div className="nav-menu">
         <Link href="/">
           <a>
-            <img style={{ width: "24px" }} src="/left-arrow.png" alt="left" />{" "}
+            <Image
+              height="24px"
+              width="24px"
+              src="/left-arrow.png"
+              alt="left-arrow"
+            />
           </a>
         </Link>
       </div>
@@ -13,13 +20,14 @@ export default () => {
       <div className="nav-menu">Kelola Kota</div>
 
       <div className="menu">
-        <img
-          style={{ width: "18px", marginRight: "14px" }}
-          src="/search.png"
-          alt="left"
-        />
+        <Image width="18px" height="14px" src="/search.png" alt="left" />
         <input
-          style={{ background: "transparent", border: "none", width: "100%" }}
+          style={{
+            background: "transparent",
+            border: "none",
+            width: "100%",
+            marginLeft: "14px",
+          }}
           placeholder="Masukan lokasi"
         />
       </div>
@@ -27,18 +35,14 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Badung</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Badung</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
-                src="/maps.png"
-                alt="maps"
-              />
+              <Image width="14px" height="14px" src="/maps.png" alt="maps" />
             </div>
           </div>
           <div className="span-menu">
             IKU 20
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               29<sup className="sup">o</sup>/ 30<sup className="sup">o</sup>
             </span>
           </div>
@@ -52,10 +56,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Bangli</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Bangli</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -63,7 +69,7 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 22
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               25<sup className="sup">o</sup>/ 28<sup className="sup">o</sup>
             </span>
           </div>
@@ -77,10 +83,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Buleleng</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Buleleng</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -88,8 +96,8 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 19
-            <span style={{ marginLeft: "16px" }}>
-              20<sup className="sup">o</sup>/ 24<sup className="sup">o</sup>
+            <span style={{ marginLeft: "14px" }}>
+              214<sup className="sup">o</sup>/ 24<sup className="sup">o</sup>
             </span>
           </div>
         </div>
@@ -102,24 +110,26 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Gianyar</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Gianyar</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
             </div>
           </div>
           <div className="span-menu">
-            IKU 26
-            <span style={{ marginLeft: "16px" }}>
-              25<sup className="sup">o</sup>/ 26<sup className="sup">o</sup>
+            IKU 24
+            <span style={{ marginLeft: "14px" }}>
+              27<sup className="sup">o</sup>/ 30<sup className="sup">o</sup>
             </span>
           </div>
         </div>
         <div className="suhu-menu">
-          25
+          30
           <div className="derajat-menu">o</div>
         </div>
       </div>
@@ -127,10 +137,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Jembrana</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Jembrana</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -138,7 +150,7 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 23
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               27<sup className="sup">o</sup>/ 29<sup className="sup">o</sup>
             </span>
           </div>
@@ -152,10 +164,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Karangasem</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Karangasem</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -163,7 +177,7 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 24
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               18<sup className="sup">o</sup>/ 24<sup className="sup">o</sup>
             </span>
           </div>
@@ -177,10 +191,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Klungkung</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Klungkung</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -188,7 +204,7 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 20
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               28<sup className="sup">o</sup>/ 29<sup className="sup">o</sup>
             </span>
           </div>
@@ -202,10 +218,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Tabanan</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Tabanan</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -213,13 +231,13 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 19
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               18<sup className="sup">o</sup>/ 21<sup className="sup">o</sup>
             </span>
           </div>
         </div>
         <div className="suhu-menu">
-          20
+          21
           <div className="derajat-menu">o</div>
         </div>
       </div>
@@ -227,10 +245,12 @@ export default () => {
       <div className="component">
         <div style={{ margin: "32px 22px" }}>
           <div className="isi-component">
-            <div>Kabupaten Denpasar</div>
+            <div style={{ marginRight: "6px" }}>Kabupaten Denpasar</div>
             <div>
-              <img
-                style={{ width: "16px", marginLeft: "8px" }}
+              <Image
+                width="14px"
+                height="14px"
+                marginLeft="8px"
                 src="/maps.png"
                 alt="maps"
               />
@@ -238,7 +258,7 @@ export default () => {
           </div>
           <div className="span-menu">
             IKU 18
-            <span style={{ marginLeft: "16px" }}>
+            <span style={{ marginLeft: "14px" }}>
               25<sup className="sup">o</sup>/ 30<sup className="sup">o</sup>
             </span>
           </div>
@@ -251,3 +271,5 @@ export default () => {
     </>
   );
 };
+
+export default MenuPage;
