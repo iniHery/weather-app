@@ -81,7 +81,7 @@ const HomePage = () => {
         <div className="items-footer">
           <Image
             width="38px"
-            height="0px"
+            height="38px"
             marginRight="10px"
             src="/sun-white.png"
             alt="sun"
@@ -99,7 +99,7 @@ const HomePage = () => {
         <div className="items-footer">
           <Image
             width="38px"
-            height="0px"
+            height="38px"
             marginRight="10px"
             src="/cloudy-day.png"
             alt="sun"
@@ -117,7 +117,7 @@ const HomePage = () => {
         <div className="items-footer">
           <Image
             width="38px"
-            height="0px"
+            height="38px"
             marginRight="10px"
             src="/sun-white.png"
             alt="sun"
@@ -135,7 +135,7 @@ const HomePage = () => {
         <div className="items-footer">
           <Image
             width="38px"
-            height="0px"
+            height="38px"
             marginRight="10px"
             src="/cloudy-day.png"
             alt="sun"
