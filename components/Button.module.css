@@ -1,0 +1,11 @@
+.btn {
+  background: transparent;
+  padding: 10px 24px;
+  border: solid 2px turquoise;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: turquoise;
+}
