@@ -565,6 +565,19 @@ const HomePage = () => {
         </div>
       </div>
 
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          color: "white",
+          fontSize: "16px",
+          fontFamily: "Lucida Bright",
+          opacity: "0,1",
+        }}
+      >
+        iniHery/weather-app
+      </div>
+
       {/* End Articel */}
     </body>
   );
